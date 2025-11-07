@@ -20,8 +20,8 @@ const REGION_CONFIGS: Record<Region, RegionConfig> = {
     referenceStartTime: new Date('2025-11-06T13:00:00Z').getTime() // 14:00 CET = 13:00 UTC
   },
   US: {
-    timezoneOffset: -8, // UTC-8 (PST)
-    referenceStartTime: new Date('2025-11-06T12:30:00Z').getTime() // 4:30 AM PST (Nov 6) = 12:30 UTC (Nov 6)
+    timezoneOffset: -5, // UTC-5 (EST)
+    referenceStartTime: new Date('2025-11-06T09:30:00Z').getTime() // 04:30 AM EST (Nov 6) = 09:30 UTC (Nov 6)
   }
 }
 
@@ -285,7 +285,7 @@ function App() {
     return () => clearInterval(interval)
   }, [region])
 
-  const timezoneLabel = region === 'EU' ? 'CET' : 'PST'
+  const timezoneLabel = region === 'EU' ? 'CET' : 'EST'
   const upcomingAssaults = calculateUpcomingAssaults(region, 5)
 
   return (
