@@ -390,7 +390,7 @@ function App() {
         
         <div className="info">
           <p className="timezone-note">All times shown in {timezoneLabel}</p>
-          <p className="timezone-note">Found a bug? Report it <a href="https://github.com/Alastair-Scott/lemix-legion-assault/issues" target="_blank" rel="noopener noreferrer">here</a></p>
+          <p className="timezone-note">Found a bug? Report it <a href="https://github.com/Eylwen/lemix-legion-assault/issues" target="_blank" rel="noopener noreferrer">here</a></p>
         </div>
       </div>
     </div>
